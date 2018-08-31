@@ -29032,7 +29032,7 @@ var __generator = undefined && undefined.__generator || function (thisArg, body)
     }
 };
 
-var apiUrl = 'https://api-iddog.idwall.co';
+var apiUrl = "https://api-iddog.idwall.co";
 function request(url, opts) {
     return __awaiter(this, void 0, Promise, function () {
         var headers, res, body, e_1;
@@ -43352,7 +43352,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '60914' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '50108' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 

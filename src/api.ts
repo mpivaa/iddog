@@ -17,7 +17,7 @@ interface ApiRes<T> {
   data?: T;
 }
 
-const apiUrl = 'https://api-iddog.idwall.co';
+const apiUrl = process.env.API_URL;
 
 export async function request<T>(url: string, opts: ReqOpts): Promise<ApiRes<T>> {
   const headers: HeadersInit = {

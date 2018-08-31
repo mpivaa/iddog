@@ -2,6 +2,7 @@ import { reducer as authReducer, State as AuthState } from '@app/auth';
 import { reducer as feedReducer, State as FeedState } from '@app/feed';
 import { connectRouter, history, routerMiddleware, RouterState } from '@app/router';
 import { applyMiddleware, combineReducers, createStore, Action, Reducer } from 'redux';
+import logger from 'redux-logger';
 import thunk from 'redux-thunk';
 
 export interface State {
