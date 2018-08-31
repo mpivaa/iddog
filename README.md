@@ -4,12 +4,6 @@ Demo: https://iddog-jyrsfykstw.now.sh/
 
 ## Installing
 
-Install Typescript and Parcel
-
-```sh
-npm install -g typescript parcel-bundler
-```
-
 Install dependencies
 ```sh
 npm install
