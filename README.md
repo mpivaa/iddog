@@ -1,21 +1,25 @@
 # Getting Started
 
-Demo: https://dist-bfbaycojmi.now.sh
+Demo: https://iddog-jyrsfykstw.now.sh/
 
 ## Installing
-
-Install Typescript and Parcel
-
-```sh
-npm install -g typescript parcel-bundler
-```
 
 Install dependencies
 ```sh
 npm install
 ```
 
-Run the app
+Start dev server
+```sh
+npm run dev
+```
+
+Build bundle
+```sh
+npm run build
+```
+
+Start production server
 ```sh
 npm start
 ```
@@ -28,20 +32,7 @@ Optionally, you can configure the API URL in the file `.env`
 npm run test
 ```
 
-## Deploy
-
-Using now
-```sh
-now dist
-```
-
-## Linter
-
-```sh
-npm run lint
-```
-
 ## Acknowledgments
 
-- Thunk maybe is an overkill
-- Try throttling the network in the feed
+- Thunk may be an overkill
+- Try throttling the network
