@@ -1,6 +1,6 @@
 # Getting Started
 
-Demo: https://dist-etucowczfq.now.sh/
+Demo: https://dist-bfbaycojmi.now.sh
 
 ## Installing
 
@@ -19,6 +19,8 @@ Run the app
 ```sh
 npm start
 ```
+
+Optionally, you can configure the API URL in the file `.env`
 
 ## Testing
 
