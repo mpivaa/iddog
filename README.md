@@ -19,7 +19,7 @@ npm start
 ## Testing
 
 ```sh
-npm run start
+npm run test
 ```
 
 ## Linter
@@ -27,3 +27,8 @@ npm run start
 ```sh
 npm run lint
 ```
+
+## Acknowledgments
+
+- Thunk maybe is an overkill
+- Try throttling the network in the feed
