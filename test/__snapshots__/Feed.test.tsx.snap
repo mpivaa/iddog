@@ -1,0 +1,342 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Feed renders correctly 1`] = `
+<div
+  class="sc-bxivhb oUyRg"
+>
+  <div
+    class="sc-htpNat jaBiNQ"
+    direction="column"
+  >
+    <div
+      class="sc-EHOje cYMhyC"
+    >
+      The IDDOG
+    </div>
+    <div
+      class="sc-htpNat coRsnH"
+      direction="row"
+    >
+      <a
+        class="sc-dnqmqq bUwXkI"
+        href="/?category=husky"
+      >
+        Husky
+      </a>
+      <a
+        class="sc-dnqmqq ckvkZp"
+        href="/?category=labrador"
+      >
+        Labrador
+      </a>
+      <a
+        class="sc-dnqmqq ckvkZp"
+        href="/?category=hound"
+      >
+        Hound
+      </a>
+      <a
+        class="sc-dnqmqq ckvkZp"
+        href="/?category=pug"
+      >
+        Pug
+      </a>
+    </div>
+    <div
+      class="sc-htpNat IQKaj"
+      direction="row"
+    >
+      <div
+        class="sc-bZQynM SLkpq"
+      >
+        <div
+          class="lazyload-placeholder"
+          style="height: 270px;"
+        />
+      </div>
+      <div
+        class="sc-bZQynM SLkpq"
+      >
+        <div
+          class="lazyload-placeholder"
+          style="height: 270px;"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Feed renders correctly 2`] = `
+Object {
+  "data": Object {
+    "category": "husky",
+    "list": Array [
+      "https://dog.ceo/api/img/husky/n02110185_10047.jpg",
+      "https://dog.ceo/api/img/husky/n02110185_10116.jpg",
+    ],
+  },
+  "error": null,
+  "loading": false,
+}
+`;
+
+exports[`Set category 1`] = `
+<div
+  class="sc-bxivhb oUyRg"
+>
+  <div
+    class="sc-htpNat jaBiNQ"
+    direction="column"
+  >
+    <div
+      class="sc-EHOje cYMhyC"
+    >
+      The IDDOG
+    </div>
+    <div
+      class="sc-htpNat coRsnH"
+      direction="row"
+    >
+      <a
+        class="sc-dnqmqq bUwXkI"
+        href="/?category=husky"
+      >
+        Husky
+      </a>
+      <a
+        class="sc-dnqmqq ckvkZp"
+        href="/?category=labrador"
+      >
+        Labrador
+      </a>
+      <a
+        class="sc-dnqmqq ckvkZp"
+        href="/?category=hound"
+      >
+        Hound
+      </a>
+      <a
+        class="sc-dnqmqq ckvkZp"
+        href="/?category=pug"
+      >
+        Pug
+      </a>
+    </div>
+    <div
+      class="sc-htpNat IQKaj"
+      direction="row"
+    >
+      <div
+        class="sc-bZQynM SLkpq"
+      >
+        <div
+          class="lazyload-placeholder"
+          style="height: 270px;"
+        />
+      </div>
+      <div
+        class="sc-bZQynM SLkpq"
+      >
+        <div
+          class="lazyload-placeholder"
+          style="height: 270px;"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Set category 2`] = `
+<div
+  class="sc-bxivhb oUyRg"
+>
+  <div
+    class="sc-htpNat jaBiNQ"
+    direction="column"
+  >
+    <div
+      class="sc-EHOje cYMhyC"
+    >
+      The IDDOG
+    </div>
+    <div
+      class="sc-htpNat coRsnH"
+      direction="row"
+    >
+      <a
+        class="sc-dnqmqq ckvkZp"
+        href="/?category=husky"
+      >
+        Husky
+      </a>
+      <a
+        class="sc-dnqmqq bUwXkI"
+        href="/?category=labrador"
+      >
+        Labrador
+      </a>
+      <a
+        class="sc-dnqmqq ckvkZp"
+        href="/?category=hound"
+      >
+        Hound
+      </a>
+      <a
+        class="sc-dnqmqq ckvkZp"
+        href="/?category=pug"
+      >
+        Pug
+      </a>
+    </div>
+    <div
+      class="sc-htpNat IQKaj"
+      direction="row"
+    >
+      <div
+        class="sc-bZQynM SLkpq"
+      >
+        <div
+          class="lazyload-placeholder"
+          style="height: 270px;"
+        />
+      </div>
+      <div
+        class="sc-bZQynM SLkpq"
+      >
+        <div
+          class="lazyload-placeholder"
+          style="height: 270px;"
+        />
+      </div>
+      <div
+        class="sc-bZQynM SLkpq"
+      >
+        <div
+          class="lazyload-placeholder"
+          style="height: 270px;"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Set category 3`] = `
+Object {
+  "data": Object {
+    "category": "labrador",
+    "list": Array [
+      "https://dog.ceo/api/img/labrador/n02099712_1150.jpg",
+      "https://dog.ceo/api/img/labrador/n02099712_1200.jpg",
+      "https://dog.ceo/api/img/labrador/n02099712_1229.jpg",
+    ],
+  },
+  "error": null,
+  "loading": false,
+}
+`;
+
+exports[`Show item 1`] = `
+<div
+  class="sc-bxivhb oUyRg"
+>
+  <div
+    class="sc-htpNat jaBiNQ"
+    direction="column"
+  >
+    <div
+      class="sc-EHOje cYMhyC"
+    >
+      The IDDOG
+    </div>
+    <div
+      class="sc-htpNat coRsnH"
+      direction="row"
+    >
+      <a
+        class="sc-dnqmqq ckvkZp"
+        href="/?category=husky"
+      >
+        Husky
+      </a>
+      <a
+        class="sc-dnqmqq bUwXkI"
+        href="/?category=labrador"
+      >
+        Labrador
+      </a>
+      <a
+        class="sc-dnqmqq ckvkZp"
+        href="/?category=hound"
+      >
+        Hound
+      </a>
+      <a
+        class="sc-dnqmqq ckvkZp"
+        href="/?category=pug"
+      >
+        Pug
+      </a>
+    </div>
+    <div
+      class="sc-htpNat IQKaj"
+      direction="row"
+    >
+      <div
+        class="sc-bZQynM SLkpq"
+      >
+        <div
+          class="lazyload-placeholder"
+          style="height: 270px;"
+        />
+      </div>
+      <div
+        class="sc-bZQynM SLkpq"
+      >
+        <div
+          class="lazyload-placeholder"
+          style="height: 270px;"
+        />
+      </div>
+      <div
+        class="sc-bZQynM SLkpq"
+      >
+        <div
+          class="lazyload-placeholder"
+          style="height: 270px;"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    class="sc-htoDjs coBocp"
+  >
+    <div
+      class="sc-bxivhb oUyRg"
+    >
+      <div
+        class="sc-htpNat dSBIma"
+        direction="column"
+      >
+        <div
+          class="sc-htpNat coRsnH"
+          direction="row"
+        >
+          <div
+            class="sc-bZQynM dpxuNW"
+          >
+            <div
+              class="lazyload-placeholder"
+              style="height: 600px;"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Show item 2`] = `"?category=labrador&id=https://dog.ceo/api/img/labrador/n02099712_1150.jpg"`;

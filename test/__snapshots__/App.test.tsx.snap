@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App renders without errors 1`] = `
+<div
+  className="sc-bxivhb oUyRg"
+  size="large"
+>
+  <div
+    className="sc-bxivhb dHxAwy"
+    size="small"
+  >
+    <div
+      className="sc-htpNat dSBIma"
+      direction="column"
+      fill={true}
+    >
+      <div
+        className="sc-EHOje cYMhyC"
+      >
+        The IDDOG
+      </div>
+      <input
+        className="sc-bdVaJa eKhXFQ"
+        onChange={[Function]}
+        placeholder="your email"
+        type="email"
+        value=""
+      />
+      <div
+        className="sc-ifAKCX iIcXGD"
+      />
+      <button
+        className="sc-bwzfXH emADTk"
+        onClick={[Function]}
+      >
+        Entrar
+      </button>
+    </div>
+  </div>
+</div>
+`;

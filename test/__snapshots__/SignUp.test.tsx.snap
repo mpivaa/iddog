@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sets token and show feed when authorized 1`] = `
+Object {
+  "error": null,
+  "loading": false,
+  "token": "xyz",
+}
+`;
+
+exports[`Shows an error when email is not valid 1`] = `
+Object {
+  "auth": Object {
+    "error": Object {
+      "message": "Some error",
+    },
+    "loading": false,
+    "token": null,
+  },
+  "feed": Object {
+    "data": Object {
+      "category": "",
+      "list": Array [],
+    },
+    "error": null,
+    "loading": false,
+  },
+  "router": Object {
+    "action": "POP",
+    "location": Object {
+      "hash": "",
+      "pathname": "/",
+      "search": "",
+      "state": undefined,
+    },
+  },
+}
+`;
+
+exports[`Shows an error when email is not valid 2`] = `
+<div
+  class="sc-bxivhb dHxAwy"
+>
+  <div
+    class="sc-htpNat dSBIma"
+    direction="column"
+  >
+    <div
+      class="sc-EHOje cYMhyC"
+    >
+      The IDDOG
+    </div>
+    <input
+      class="sc-bdVaJa eKhXFQ"
+      placeholder="your email"
+      type="email"
+      value="invalid-email"
+    />
+    <div
+      class="sc-ifAKCX iIcXGD"
+    >
+      Some error
+    </div>
+    <button
+      class="sc-bwzfXH emADTk"
+    >
+      Entrar
+    </button>
+  </div>
+</div>
+`;
+
+exports[`SignUp renders correctly 1`] = `
+<div
+  class="sc-bxivhb dHxAwy"
+>
+  <div
+    class="sc-htpNat dSBIma"
+    direction="column"
+  >
+    <div
+      class="sc-EHOje cYMhyC"
+    >
+      The IDDOG
+    </div>
+    <input
+      class="sc-bdVaJa eKhXFQ"
+      placeholder="your email"
+      type="email"
+      value=""
+    />
+    <div
+      class="sc-ifAKCX iIcXGD"
+    />
+    <button
+      class="sc-bwzfXH emADTk"
+    >
+      Entrar
+    </button>
+  </div>
+</div>
+`;
