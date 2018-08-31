@@ -1,5 +1,9 @@
 # Getting Started
 
+Demo: https://dist-bfbaycojmi.now.sh
+
+## Installing
+
 Install Typescript and Parcel
 
 ```sh
@@ -16,10 +20,19 @@ Run the app
 npm start
 ```
 
+Optionally, you can configure the API URL in the file `.env`
+
 ## Testing
 
 ```sh
 npm run test
+```
+
+## Deploy
+
+Using now
+```sh
+now dist
 ```
 
 ## Linter
