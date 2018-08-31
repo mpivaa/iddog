@@ -1,5 +1,9 @@
 # Getting Started
 
+Demo: https://dist-etucowczfq.now.sh/
+
+## Installing
+
 Install Typescript and Parcel
 
 ```sh
@@ -20,6 +24,13 @@ npm start
 
 ```sh
 npm run test
+```
+
+## Deploy
+
+Using now
+```sh
+now dist
 ```
 
 ## Linter
