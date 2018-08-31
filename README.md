@@ -9,7 +9,17 @@ Install dependencies
 npm install
 ```
 
-Run the app
+Start dev server
+```sh
+npm run dev
+```
+
+Build bundle
+```sh
+npm run build
+```
+
+Start production server
 ```sh
 npm start
 ```
