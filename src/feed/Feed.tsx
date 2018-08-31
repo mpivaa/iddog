@@ -20,17 +20,17 @@ interface Props {
 }
 
 export class Feed extends React.Component<Props> {
-  public componentDidMount() {
+  componentDidMount() {
     this.props.fetchFeed(this.props.category);
   }
 
-  public componentDidUpdate(prevProps: Props) {
+  componentDidUpdate(prevProps: Props) {
     if (this.props.category !== prevProps.category) {
       this.props.fetchFeed(this.props.category);
     }
   }
 
-  public render() {
+  render() {
     const { list, category, promoteItem, id, goBack } = this.props;
     const categories: { [key: string]: string } = {
       husky: 'Husky',
