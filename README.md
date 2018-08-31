@@ -1,6 +1,6 @@
 # Getting Started
 
-Demo: https://dist-bfbaycojmi.now.sh
+Demo: https://iddog-jyrsfykstw.now.sh/
 
 ## Installing
 
@@ -43,5 +43,5 @@ npm run lint
 
 ## Acknowledgments
 
-- Thunk maybe is an overkill
-- Try throttling the network in the feed
+- Thunk may be an overkill
+- Try throttling the network=
