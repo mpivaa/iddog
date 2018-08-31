@@ -325,6 +325,11 @@ exports[`Show item 1`] = `
           direction="row"
         >
           <div
+            class="sc-iwsKbI cRkFmT"
+          >
+            ❌
+          </div>
+          <div
             class="sc-bZQynM dpxuNW"
           >
             <div
