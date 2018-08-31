@@ -41018,7 +41018,7 @@ function Button(_a) {
         rest = __rest(_a, ["loading", "children"]);
     return React.createElement("button", __assign({}, rest), React.createElement(_reactSpinners.PulseLoader, { loading: loading, color: "#fff", size: 8 }), !loading && children);
 }
-var StyledButton = (0, _styledComponents2.default)(Button)(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  border: none;\n  margin: 12px 0;\n  padding: 12px;\n  background-color: #333;\n  color: white;\n  border-radius: 4px;\n  font-size: 1rem;\n  text-transform: uppercase;\n  cursor: pointer;\n\n  &:hover {\n    background-color: #444;\n  }\n\n  &:focus, &:active {\n    outline: none;\n  }\n"], ["\n  border: none;\n  margin: 12px 0;\n  padding: 12px;\n  background-color: #333;\n  color: white;\n  border-radius: 4px;\n  font-size: 1rem;\n  text-transform: uppercase;\n  cursor: pointer;\n\n  &:hover {\n    background-color: #444;\n  }\n\n  &:focus, &:active {\n    outline: none;\n  }\n"])));
+var StyledButton = (0, _styledComponents2.default)(Button)(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  border: none;\n  margin: 12px 0;\n  padding: 12px;\n  background-color: #333;\n  color: white;\n  border-radius: 4px;\n  font-size: 1rem;\n  text-transform: uppercase;\n  cursor: pointer;\n  width: 100%;\n\n  &:hover {\n    background-color: #444;\n  }\n\n  &:focus, &:active {\n    outline: none;\n  }\n"], ["\n  border: none;\n  margin: 12px 0;\n  padding: 12px;\n  background-color: #333;\n  color: white;\n  border-radius: 4px;\n  font-size: 1rem;\n  text-transform: uppercase;\n  cursor: pointer;\n  width: 100%;\n\n  &:hover {\n    background-color: #444;\n  }\n\n  &:focus, &:active {\n    outline: none;\n  }\n"])));
 exports.default = StyledButton;
 
 var templateObject_1;
@@ -41967,19 +41967,21 @@ var SignUp = /** @class */function (_super) {
         _this.state = { email: '' };
         return _this;
     }
-    SignUp.prototype.signUp = function () {
+    SignUp.prototype.signUp = function (e) {
+        e.preventDefault();
         this.props.signUp(this.state.email);
+        return false;
     };
     SignUp.prototype.render = function () {
         var _this = this;
         var _a = this.props,
             error = _a.error,
             loading = _a.loading;
-        return React.createElement(_index.Container, { size: "small" }, React.createElement(_index.LinearLayout, { direction: "column", fill: true }, React.createElement(_index.Title, null, "The IDDOG"), React.createElement(_index.Input, { placeholder: "your email", type: "email", value: this.state.email, onChange: function onChange(e) {
+        return React.createElement(_index.Container, { size: "small" }, React.createElement(_index.LinearLayout, { direction: "column", fill: true }, React.createElement("form", { onSubmit: function onSubmit(e) {
+                return _this.signUp(e);
+            } }, React.createElement(_index.Title, null, "The IDDOG"), React.createElement(_index.Input, { placeholder: "your email", type: "email", value: this.state.email, onChange: function onChange(e) {
                 return _this.setState({ email: e.target.value });
-            } }), React.createElement(_index.Error, null, error && error.message), React.createElement(_index.Button, { loading: loading, onClick: function onClick() {
-                return _this.signUp();
-            } }, "Entrar")));
+            } }), React.createElement(_index.Error, null, error && error.message), React.createElement(_index.Button, { loading: loading }, "Entrar"))));
     };
     return SignUp;
 }(React.Component);
@@ -42937,7 +42939,7 @@ var StyledCategory = (0, _styledComponents2.default)(Category)(templateObject_1 
 }, function (props) {
     return props.active ? 'bold' : 'normal';
 });
-var CloseButton = _styledComponents2.default.div(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n  position: absolute;\n  top: 5px;\n  right: 5px;\n  color: transparent;\n  text-shadow: 0 0 0 white;\n  cursor: pointer;\n"], ["\n  position: absolute;\n  top: 5px;\n  right: 5px;\n  color: transparent;\n  text-shadow: 0 0 0 white;\n  cursor: pointer;\n"])));
+var CloseButton = _styledComponents2.default.div(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n  position: absolute;\n  top: 8px;\n  right: 8px;\n  font-size: 18px;\n  color: transparent;\n  text-shadow: 0 0 0 white;\n  cursor: pointer;\n"], ["\n  position: absolute;\n  top: 8px;\n  right: 8px;\n  font-size: 18px;\n  color: transparent;\n  text-shadow: 0 0 0 white;\n  cursor: pointer;\n"])));
 exports.Category = StyledCategory;
 exports.CloseButton = CloseButton;
 
@@ -43352,7 +43354,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '50108' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '58815' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 

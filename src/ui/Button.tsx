@@ -31,6 +31,7 @@ const StyledButton = styled(Button)`
   font-size: 1rem;
   text-transform: uppercase;
   cursor: pointer;
+  width: 100%;
 
   &:hover {
     background-color: #444;

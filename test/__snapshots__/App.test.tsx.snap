@@ -14,27 +14,30 @@ exports[`App renders without errors 1`] = `
       direction="column"
       fill={true}
     >
-      <div
-        className="sc-EHOje cYMhyC"
+      <form
+        onSubmit={[Function]}
       >
-        The IDDOG
-      </div>
-      <input
-        className="sc-bdVaJa eKhXFQ"
-        onChange={[Function]}
-        placeholder="your email"
-        type="email"
-        value=""
-      />
-      <div
-        className="sc-ifAKCX iIcXGD"
-      />
-      <button
-        className="sc-bwzfXH emADTk"
-        onClick={[Function]}
-      >
-        Entrar
-      </button>
+        <div
+          className="sc-EHOje cYMhyC"
+        >
+          The IDDOG
+        </div>
+        <input
+          className="sc-bdVaJa eKhXFQ"
+          onChange={[Function]}
+          placeholder="your email"
+          type="email"
+          value=""
+        />
+        <div
+          className="sc-ifAKCX iIcXGD"
+        />
+        <button
+          className="sc-bwzfXH chmtcU"
+        >
+          Entrar
+        </button>
+      </form>
     </div>
   </div>
 </div>

@@ -19,8 +19,10 @@ interface Props {
 export class SignUp extends React.Component<Props, State> {
   readonly state: State = { email: '' };
 
-  signUp() {
+  signUp(e: React.SyntheticEvent) {
+    e.preventDefault();
     this.props.signUp(this.state.email);
+    return false;
   }
 
   render() {
@@ -29,20 +31,19 @@ export class SignUp extends React.Component<Props, State> {
     return (
       <Container size="small">
         <LinearLayout direction="column" fill>
-          <Title>The IDDOG</Title>
-          <Input
-            placeholder="your email"
-            type="email"
-            value={this.state.email}
-            onChange={(e) => this.setState({ email: e.target.value })}
-          />
-          <Error>{error && error.message}</Error>
-          <Button
-            loading={loading}
-            onClick={() => this.signUp()}
-          >
-            Entrar
-          </Button>
+          <form onSubmit={(e) => this.signUp(e)}>
+            <Title>The IDDOG</Title>
+            <Input
+              placeholder="your email"
+              type="email"
+              value={this.state.email}
+              onChange={(e) => this.setState({ email: e.target.value })}
+            />
+            <Error>{error && error.message}</Error>
+            <Button loading={loading}>
+              Entrar
+            </Button>
+          </form>
         </LinearLayout>
       </Container>
     );

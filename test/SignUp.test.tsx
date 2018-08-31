@@ -29,7 +29,7 @@ test('Shows an error when email is not valid', (done) => {
     target: { value: 'invalid-email' }
   });
 
-  component.find('button').simulate('click');
+  component.find('form').simulate('submit');
 
   setTimeout(() => {
     expect(store.getState()).toMatchSnapshot();
@@ -54,7 +54,7 @@ test('Sets token and show feed when authorized', (done) => {
     target: { value: 'valid@email.com' }
   });
 
-  component.find('button').simulate('click');
+  component.find('form').simulate('submit');
 
   setTimeout(() => {
     expect(store.getState().auth).toMatchSnapshot();

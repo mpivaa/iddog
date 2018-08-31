@@ -32,8 +32,9 @@ const StyledCategory = styled(Category)`
 
 const CloseButton = styled.div`
   position: absolute;
-  top: 5px;
-  right: 5px;
+  top: 8px;
+  right: 8px;
+  font-size: 18px;
   color: transparent;
   text-shadow: 0 0 0 white;
   cursor: pointer;
