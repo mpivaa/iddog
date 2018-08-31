@@ -26,4 +26,3 @@ npm run test
 
 - Thunk may be an overkill
 - Try throttling the network
-- A theming system would be nice to improve layout consistency
