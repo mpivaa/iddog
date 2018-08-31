@@ -28,19 +28,6 @@ Optionally, you can configure the API URL in the file `.env`
 npm run test
 ```
 
-## Deploy
-
-Using now
-```sh
-now dist
-```
-
-## Linter
-
-```sh
-npm run lint
-```
-
 ## Acknowledgments
 
 - Thunk may be an overkill
