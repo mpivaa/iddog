@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { goBack, push } from 'connected-react-router';
+import { push } from 'connected-react-router';
 import { connect } from 'react-redux';
 import { fetchFeed } from '@app/feed/actions';
 import Detail from '@app/feed/Detail';
@@ -16,7 +16,7 @@ interface Props {
   error: Error | null;
   fetchFeed(category: string): void;
   promoteItem(src: string, category: string): void;
-  goBack(): void;
+  goBack(category: string): void;
 }
 
 export class Feed extends React.Component<Props> {
@@ -62,7 +62,7 @@ export class Feed extends React.Component<Props> {
             ))}
           </LinearLayout>
         </LinearLayout>
-        {id && <Detail id={id} goBack={goBack} />}
+        {id && <Detail id={id} goBack={() => goBack(category)} />}
       </Container>
     );
   }
@@ -82,7 +82,11 @@ const mapDispatch = {
       search: `?category=${category}&id=${src}`,
     });
   },
-  goBack,
+  goBack(category: string) {
+    return push({
+      search: `?category=${category}`,
+    });
+  },
 };
 
 export default connect(mapState, mapDispatch)(Feed);

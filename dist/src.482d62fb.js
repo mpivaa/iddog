@@ -31288,7 +31288,7 @@ if ('development' === 'production') {
 } else {
   module.exports = require('./cjs/react-is.development.js');
 }
-},{"./cjs/react-is.development.js":"../node_modules/react-is/cjs/react-is.development.js"}],"../../../../../usr/local/lib/node_modules/parcel-bundler/node_modules/process/browser.js":[function(require,module,exports) {
+},{"./cjs/react-is.development.js":"../node_modules/react-is/cjs/react-is.development.js"}],"../node_modules/process/browser.js":[function(require,module,exports) {
 
 // shim for using process in browser
 var process = module.exports = {};
@@ -33810,7 +33810,7 @@ exports.ServerStyleSheet = ServerStyleSheet;
 exports.StyleSheetManager = StyleSheetManager;
 exports.__DO_NOT_USE_OR_YOU_WILL_BE_HAUNTED_BY_SPOOKY_GHOSTS = __DO_NOT_USE_OR_YOU_WILL_BE_HAUNTED_BY_SPOOKY_GHOSTS;
 //# sourceMappingURL=styled-components.browser.esm.js.map
-},{"fbjs/lib/hyphenateStyleName":"../node_modules/fbjs/lib/hyphenateStyleName.js","react":"../node_modules/react/index.js","stylis":"../node_modules/stylis/stylis.js","stylis-rule-sheet":"../node_modules/stylis-rule-sheet/index.js","prop-types":"../node_modules/prop-types/index.js","hoist-non-react-statics":"../node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js","react-is":"../node_modules/react-is/index.js","process":"../../../../../usr/local/lib/node_modules/parcel-bundler/node_modules/process/browser.js"}],"ui/Input.tsx":[function(require,module,exports) {
+},{"fbjs/lib/hyphenateStyleName":"../node_modules/fbjs/lib/hyphenateStyleName.js","react":"../node_modules/react/index.js","stylis":"../node_modules/stylis/stylis.js","stylis-rule-sheet":"../node_modules/stylis-rule-sheet/index.js","prop-types":"../node_modules/prop-types/index.js","hoist-non-react-statics":"../node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js","react-is":"../node_modules/react-is/index.js","process":"../node_modules/process/browser.js"}],"ui/Input.tsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -41732,7 +41732,7 @@ LazyLoad.defaultProps = {
 var lazyload = exports.lazyload = _decorator2.default;
 exports.default = LazyLoad;
 exports.forceCheck = lazyLoadHandler;
-},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","prop-types":"../node_modules/prop-types/index.js","./utils/event":"../node_modules/react-lazyload/lib/utils/event.js","./utils/scrollParent":"../node_modules/react-lazyload/lib/utils/scrollParent.js","./utils/debounce":"../node_modules/react-lazyload/lib/utils/debounce.js","./utils/throttle":"../node_modules/react-lazyload/lib/utils/throttle.js","./decorator":"../node_modules/react-lazyload/lib/decorator.js","process":"../../../../../usr/local/lib/node_modules/parcel-bundler/node_modules/process/browser.js"}],"ui/LazyImage.tsx":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","prop-types":"../node_modules/prop-types/index.js","./utils/event":"../node_modules/react-lazyload/lib/utils/event.js","./utils/scrollParent":"../node_modules/react-lazyload/lib/utils/scrollParent.js","./utils/debounce":"../node_modules/react-lazyload/lib/utils/debounce.js","./utils/throttle":"../node_modules/react-lazyload/lib/utils/throttle.js","./decorator":"../node_modules/react-lazyload/lib/decorator.js","process":"../node_modules/process/browser.js"}],"ui/LazyImage.tsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -43063,7 +43063,7 @@ var Feed = /** @class */function (_super) {
             category = _a.category,
             promoteItem = _a.promoteItem,
             id = _a.id,
-            goBack = _a.goBack;
+            _goBack = _a.goBack;
         var categories = {
             husky: 'Husky',
             labrador: 'Labrador',
@@ -43076,7 +43076,9 @@ var Feed = /** @class */function (_super) {
             return React.createElement(_index.LazyImage, { key: src, cover: true, size: "medium", src: src, onClick: function onClick() {
                     return promoteItem(src, category);
                 } });
-        }))), id && React.createElement(_Detail2.default, { id: id, goBack: goBack }));
+        }))), id && React.createElement(_Detail2.default, { id: id, goBack: function goBack() {
+                return _goBack(category);
+            } }));
     };
     return Feed;
 }(React.Component);
@@ -43097,7 +43099,11 @@ var mapDispatch = {
             search: "?category=" + category + "&id=" + src
         });
     },
-    goBack: _connectedReactRouter.goBack
+    goBack: function goBack(category) {
+        return (0, _connectedReactRouter.push)({
+            search: "?category=" + category
+        });
+    }
 };
 exports.default = (0, _reactRedux.connect)(mapState, mapDispatch)(Feed);
 },{"react":"../node_modules/react/index.js","connected-react-router":"../node_modules/connected-react-router/lib/index.js","react-redux":"../node_modules/react-redux/es/index.js","./actions.ts":"feed/actions.ts","./Detail.tsx":"feed/Detail.tsx","./selectors.ts":"feed/selectors.ts","./ui.tsx":"feed/ui.tsx","../ui/index.ts":"ui/index.ts"}],"feed/reducer.ts":[function(require,module,exports) {
@@ -43325,7 +43331,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 ReactDOM.render(React.createElement(_reactRedux.Provider, { store: _store2.default }, React.createElement(_connectedReactRouter.ConnectedRouter, { history: _router.history }, React.createElement(_App2.default, null))), document.getElementById('root'));
-},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","connected-react-router":"../node_modules/connected-react-router/lib/index.js","react-redux":"../node_modules/react-redux/es/index.js","./App.tsx":"App.tsx","./router.tsx":"router.tsx","./store.ts":"store.ts"}],"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","connected-react-router":"../node_modules/connected-react-router/lib/index.js","react-redux":"../node_modules/react-redux/es/index.js","./App.tsx":"App.tsx","./router.tsx":"router.tsx","./store.ts":"store.ts"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -43354,7 +43360,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '58815' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '61228' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -43495,5 +43501,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},["../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.tsx"], null)
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.tsx"], null)
 //# sourceMappingURL=/src.482d62fb.map
