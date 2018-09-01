@@ -1,6 +1,6 @@
 # Getting Started
 
-Demo: https://iddog-jyrsfykstw.now.sh/
+Demo: https://iddog-xrodwjflex.now.sh/
 
 ## Installing
 
